@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    background: url(unnamed.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.navbar{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content{
+    padding: 100px;
+    margin: auto;
+}
+.content h1{
+    color: white;
+    opacity: 0;
+    animation: showcontent  1s forwards linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content h2{
+    color: white;
+    opacity: 0;
+    font-size: 40px;
+    animation: showcontent  1s forwards 1.6s linear;
+    font-family: sans-serif;  
+}
+.content p{
+    color: white;
+    opacity: 0;
+    font-size: 15px;
+    animation: showcontent  1s forwards 3.1s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content button{
+    padding: 10px;
+    margin: 10px;
+    opacity: 0;
+    animation: showcontent  1s forwards linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content button a{
+    padding: 10px;
+    margin: 10px;
+    opacity: 0;
+    text-decoration: none;
+    color: black;
+    animation: showcontent  1s forwards linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home-img img{
+    height: 200px;
+    position: absolute;
+    left: 70%;
+    top: 30%;
+}
+@keyframes  showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter: blur(0);
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
